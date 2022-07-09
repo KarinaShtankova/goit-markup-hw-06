@@ -790,8 +790,8 @@ img {
 	fill: var(--light-text-color);
 	border: 2px solid var(--primary-text-color);
 	border-radius: 2px;
-
-	transition: var(--transition-color), var(--transition-background-color);
+	
+	transition: var(--transition-background-color), border-color var(--anim-fast);
 }
 
 .modal-agreement-input:checked + .modal-agreement-wrapper .modal-agreement-icon {
@@ -810,6 +810,24 @@ img {
 	text-decoration-line: underline;
 	color: #2196f3;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Portfolio Page*/
 .portfolio {
