@@ -339,7 +339,7 @@
 									target="_blank"
 									rel="noopener norefferer "
 								>
-									Киев, пр-т Леси Украинки, 26
+									г. Киев, пр-т Леси Украинки, 26
 								</a>
 							</li>
 							<li class="address-items">
@@ -381,20 +381,25 @@
 						</li>
 					</ul>
 				</div>
-				<form class="footer-form" autocomplete="off">
+				<div class="footer-form-feild">
 					<strong class="footer-form-subtitle">Подпишитесь на рассылку</strong>
 
-					<div class="footer-form-feild">
-						<input class="footer-form-input" type="email" name="mailing-email" id="mailing-email" />
-						<label class="footer-form-label" for="mailing-email">E-mail</label>
+					<form class="footer-form" autocomplete="off">
+						<input
+							class="footer-form-input"
+							type="email"
+							name="mailing-email"
+							id="mailing-email"
+							placeholder="E-mail"
+						/>
 						<button class="primary-button footer-btn" type="submit">
 							Подписаться
 							<svg class="footer-form-icon" width="24px" height="24px">
 								<use href="./images/icons.svg#icon-send"></use>
 							</svg>
 						</button>
-					</div>
-				</form>
+					</form>
+				</div>
 			</div>
 		</footer>
 
@@ -411,7 +416,7 @@
 
 					<label class="modal-form-label" for="user-name">Имя</label>
 					<div class="modal-form-field">
-						<input class="modal-form-input" type="text" name="name" id="user-name" />
+						<input class="modal-form-input" type="text" name="name" id="user-name" required />
 						<svg class="modal-form-icon" width="18px" height="18px">
 							<use href="./images/icons.svg#person-black"></use>
 						</svg>
@@ -419,14 +424,14 @@
 
 					<label class="modal-form-label" for="phone_number">Телефон</label>
 					<div class="modal-form-field">
-						<input class="modal-form-input" type="tel" name="tel" id="phone_number" />
-						<svg class="modal-form-icon" width="18px" height="18px">
+						<input class="modal-form-input" type="tel" name="tel" id="phone_number" required />
+						<svg class="modal-form-icon" width="20px" height="20px">
 							<use href="./images/icons.svg#phone-black"></use></svg
 					></div>
 
 					<label class="modal-form-label" for="user-email">Почта</label>
 					<div class="modal-form-field">
-						<input class="modal-form-input" type="email" name="email" id="user-email" />
+						<input class="modal-form-input" type="email" name="email" id="user-email" required />
 						<svg class="modal-form-icon" width="18px" height="18px">
 							<use href="./images/icons.svg#email-black"></use></svg
 					></div>
@@ -435,7 +440,7 @@
 					<textarea class="modal-form-textarea" name="coment" id="user-coment" placeholder="Введите текст"></textarea>
 
 					<label class="modal-form-checkbox">
-						<input class="modal-agreement-input visually-hidden" type="checkbox" name="user-agreement" />
+						<input class="modal-agreement-input visually-hidden" type="checkbox" name="user-agreement" required />
 						<span class="modal-agreement-wrapper">
 							<svg class="modal-agreement-icon" width="16px" height="15px">
 								<use href="./images/icons.svg#icon-check"></use>
@@ -447,7 +452,7 @@
 						</span>
 					</label>
 
-					<button class="primary-button" type="submit">Отправить</button>
+					<button class="primary-button modal-submit-btn" type="submit">Отправить</button>
 				</form>
 			</div>
 		</div>

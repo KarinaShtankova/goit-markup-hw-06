@@ -141,6 +141,8 @@ img {
 
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
+
+	cursor: pointer;
 }
 
 /* Common styles end */
@@ -279,7 +281,6 @@ img {
 .hero-btn:hover,
 .hero-btn:focus {
 	background-color: var(--hover-btn-color);
-	cursor: pointer;
 }
 
 /* Benefits */
@@ -593,30 +594,19 @@ img {
 }
 
 .footer-form {
-	margin-left: 93px;
+	position: relative;
+	display: flex;
+	
 }
 
 .footer-form-feild {
-	position: relative;
-	display: flex;
+margin-left: auto;
 }
 
-.footer-form-label {
-	position: absolute;
-
-	top: 50%;
-	left: 16px;
-	transform: translateY(-50%);
-
-	font-size: 16px;
-	line-height: 1.25;
-
-	color: var(--address-text-color);
-}
 
 .footer-form-input {
 	margin-right: 12px;
-	padding: 15px 16px 15px 80px;
+	padding: 15px 16px;
 	width: 358px;
 	height: 50px;
 
@@ -626,6 +616,18 @@ img {
 	border-radius: 4px;
 	color: var(--light-text-color);
 }
+
+
+.footer-form-input::placeholder{
+
+	font-size: 16px;
+	line-height: 1.25;
+		
+	color: var(--address-text-color);
+
+}
+
+
 
 .footer-form-icon {
 	margin-left: 10px;
@@ -687,10 +689,13 @@ img {
 	height: 30px;
 	padding: 0;
 
+	fill: currentColor;
 	background: #ffffff;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
 	cursor: pointer;
+
+	transition: var(--transition-color)
 }
 
 .modal-form-subtitle {
@@ -717,8 +722,6 @@ img {
 .modal-form-input,
 .modal-form-textarea {
 	display: block;
-	margin-bottom: 10px;
-
 	width: 100%;
 
 	border: 1px solid rgba(33, 33, 33, 0.2);
@@ -733,6 +736,7 @@ img {
 
 .modal-form-field {
 	position: relative;
+	margin-bottom: 10px;
 }
 
 .modal-form-icon {
@@ -754,16 +758,29 @@ img {
 	transition: var(--transition-color), border-color var(--anim-fast);
 }
 
+.modal-close-btn:hover,
+.modal-close-btn:focus,
 .modal-form-field:focus-within {
 	color: var(--accent-color);
 }
 
+
+
 .modal-form-input:focus,
 .modal-form-textarea:focus {
 	color: #000000;
-	border-color: var(--accent-color);
 	outline: transparent;
 }
+
+.modal-form-input:hover,
+.modal-form-textarea:hover,
+.modal-form-input:focus,
+.modal-form-textarea:focus {
+	border-color: var(--accent-color);
+
+}
+
+
 
 .modal-form-textarea::placeholder {
 	font-size: 12px;
@@ -790,7 +807,7 @@ img {
 	fill: var(--light-text-color);
 	border: 2px solid var(--primary-text-color);
 	border-radius: 2px;
-	
+
 	transition: var(--transition-background-color), border-color var(--anim-fast);
 }
 
@@ -813,6 +830,14 @@ img {
 
 
 
+.modal-submit-btn {
+	transition: var(--transition-background-color);
+}
+
+.modal-submit-btn:hover,
+.modal-submit-btn:focus {
+	background-color: var(--hover-btn-color);
+}
 
 
 
